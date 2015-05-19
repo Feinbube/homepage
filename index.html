@@ -413,6 +413,20 @@
                         <p class="text-muted">Java</p>
                     </div>
                 </div>
+                <div class="portfolio-item col-md-4 col-sm-6" filter="2010 2011 2012 2013 csharp opencl research">
+                    <a href="#projectHybridNet" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover img-rounded">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-eye fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/hybridNet.png" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Hybrid.Net</h4>
+                        <p class="text-muted">C#, OpenCL</p>
+                    </div>
+                </div>                
                 <div class="portfolio-item col-md-4 col-sm-6" filter="2011 csharp wp7 contest app research">
                     <a href="#projectCardea" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover img-rounded">
@@ -426,7 +440,7 @@
                         <h4>The Health App</h4>
                         <p class="text-muted">C# and Windows Phone 7</p>
                     </div>
-                </div>
+                </div>                
                 <div class="portfolio-item col-md-4 col-sm-6" filter="2010 ccpp opencl research">
                     <a href="#projectNQueensCUDA" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover img-rounded">
@@ -1173,6 +1187,45 @@
                                 <li>Technologies: Java</li>
                                 <li>Platform: JVM</li>
                                 <li>Context: Hobby + Research Project</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="projectHybridNet" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Hybrid.Net</h2>
+                            <p class="item-intro text-muted">GPU acceleration for free!</p>
+                            <p>Hybrid.Net enables .NET developers to harness the power of GPUs for data- and compute-intense applications using the simple well-known construct: Parallel.For</p>
+                            <p>The idea was to create a library that brings the huge performance potential of OpenCL-compatible devices to .NET developers without forcing them to learn new keywords. Our implementation looks exactly like the Parallel.For that ships with .NET 4.0 (and previously with the Task Parallel Library). It transparently translates the loop body to OpenCL code and executes it on available accelerators.</p>
+                            <p>This project is available on <a href="http://github.com/Feinbube/hybridNet">GitHub</a>.</p>
+                            <h3>Features:</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item">API similar to System.Threading.Tasks.Parallel.For (all you have to do is to exchange the namespace)</li>
+                                <li class="list-group-item">Various modes: single-GPU, all-GPUs, single-CPU, all-CPUs, everything-avaialbe</li>
+                                <li class="list-group-item">Multi-dimensional array support and an additional 2D version of Parallel.For</li>
+                            </ul>
+                            <ul class="list-inline">
+                                <li>Date: 2010-2013</li>
+                                <li>Technologies: C#, OpenCL</li>
+                                <li>Platform: .NET Runtime</li>
+                                <li>Context: Research Project</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
