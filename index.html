@@ -127,7 +127,7 @@
                             <input type="radio" name="options" id="option4" autocomplete="off"> Java
                         </label>
                         <label class="btn btn-primary" data-filter=".opencl">
-                            <input type="radio" name="options" id="option3" autocomplete="off"> OpenCL
+                            <input type="radio" name="options" id="option3" autocomplete="off"> CUDA/OpenCL
                         </label>
                     </div>
                     <div class="btn-group top10" data-toggle="buttons" data-filter-group="year">
@@ -427,6 +427,20 @@
                         <p class="text-muted">C# and Windows Phone 7</p>
                     </div>
                 </div>
+                <div class="portfolio-item col-md-4 col-sm-6" filter="2010 ccpp opencl research">
+                    <a href="#projectNQueensCUDA" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover img-rounded">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-eye fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/NQueens.png" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>NQueens with CUDA</h4>
+                        <p class="text-muted">C/C++ and CUDA</p>
+                    </div>
+                </div>
                 <div class="portfolio-item col-md-4 col-sm-6" filter="2008 csharp silverlight contest web research">
                     <a href="#projectMathCalendar" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover img-rounded">
@@ -455,7 +469,7 @@
                         <p class="text-muted">C#, DirectX and XNA</p>
                     </div>
                 </div>
-                <div class="portfolio-item col-md-4 col-sm-6" filter="2008 csharp ccpp java lecture embedded robotics">
+                <div class="portfolio-item col-md-4 col-sm-6" filter="2008 csharp ccpp java lecture embedded robotics research">
                     <a href="#projectLogisticsScenario" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover img-rounded">
                             <div class="portfolio-hover-content">
@@ -1200,6 +1214,44 @@
                                 <li>Technologies: C#, Windows Phone 7</li>
                                 <li>Platform: Windows Phone 7</li>
                                 <li>Context: <a href="http://www.berlin.de/projektzukunft/wettbewerbe/apps-contest/">Apps4Berlin</a> App Contest</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="projectNQueensCUDA" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>NQueens with CUDA</h2>
+                            <p class="item-intro text-muted">GPU-accelerated solver for the NQueens puzzle</p>
+                            <p>When I started with GPU computing, I wanted a apply it to a problem that was a little more sophisticated than a hello-world example. At the same time, the n queens problem has been in the news: the University of Dresden, Germany had just broken the world record with their custom-tailored FPGA boards. Turns out there are 22,317,699,616,364,044 valid ways to position 26 queens on a 26 by 26 check board, so that none is attacking another one.</p>
+                            <p>So I picked the NQueens problem to see how far I could push a GPU-accelerated solution. I learned a lot about GPU computing, GPU hardware and discovered some very interesting performance anomalies. (Back then, GPUs were lacking all the convenient features they got in the recent years.)</p>
+                            <h3>Results:</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item">A <a href="http://dl.acm.org/citation.cfm?id=1848298">paper</a> about the implementation and some performance anomalies.</li>
+                                <li class="list-group-item">A pretty fast CUDA-based NQueens <a href="http://github.com/Feinbube/nqueens">implementation</a>.</li>
+                                <li class="list-group-item">A master thesis evaluation the design space for optimizations utilizing the Dynamic Parallelism features of 2014th NVIDIA GPUs.</li>
+                            </ul>
+                            <ul class="list-inline">
+                                <li>Date: 2010</li>
+                                <li>Technologies: C/C++, CUDA</li>
+                                <li>Platform: NVIDIA GPUs</li>
+                                <li>Context: GPU Computing Research</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
