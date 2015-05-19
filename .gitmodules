@@ -1,3 +1,6 @@
 [submodule "projects/cowJS"]
 	path = projects/cowJS
 	url = https://github.com/Feinbube/cowJS.git
+[submodule "projects/rorschach"]
+	path = projects/rorschach
+	url = https://github.com/Feinbube/rorschach-android.git
