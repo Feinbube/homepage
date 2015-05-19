@@ -126,8 +126,11 @@
                         <label class="btn btn-primary" data-filter=".java">
                             <input type="radio" name="options" id="option4" autocomplete="off"> Java
                         </label>
+                        <label class="btn btn-primary" data-filter=".js">
+                            <input type="radio" name="options" id="option5" autocomplete="off"> JS
+                        </label>
                         <label class="btn btn-primary" data-filter=".opencl">
-                            <input type="radio" name="options" id="option3" autocomplete="off"> CUDA/OpenCL
+                            <input type="radio" name="options" id="option6" autocomplete="off"> CUDA/OpenCL
                         </label>
                     </div>
                     <div class="btn-group top10" data-toggle="buttons" data-filter-group="year">
@@ -357,6 +360,20 @@
                     </div>
                 </div>
                 -->
+                <div class="portfolio-item col-md-4 col-sm-6" filter="2014 js game research hobby lecture">
+                    <a href="#projectCyclesOfWarJS" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover img-rounded">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-eye fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/cowJS.png" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Cycles of War (Javascript Edition)</h4>
+                        <p class="text-muted">Javascript</p>
+                    </div>
+                </div>
                 <div class="portfolio-item col-md-4 col-sm-6" filter="2013 java opencl hobby">
                     <a href="#projectFractalFlames" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover img-rounded">
@@ -1056,6 +1073,41 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="projectCyclesOfWarJS" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Cycles of War (Javascript Edition)</h2>
+                            <p class="item-intro text-muted">Know. Think. Decide. Act.</p>
+                            <p>This game is all about planets. Players try to acquire them all in order to win. Their only way of interacting, though, is to send a fleet from a planet they own to any other planet in the universe. When any of the fleets arrives at its target, an automatic battle will be fought the winner of which will be in possession of the planet afterwards. This is very convenient, because planets automatically produce troops that can then be send off to new worlds again.</p>
+                            <p>The Javascript addition is a quick rewrite of the <a href="#projectCyclesOfWar" class="portfolio-link" data-toggle="modal">Java version of the game</a>.</p>
+                            <p>This project is available on <a href="http://github.com/Feinbube/cowJS">GitHub</a>.</p>
+                            <h3>Impressions:</h3>
+                            <iframe src="./projects/cowJS/index.html" height="855" width="540" seamless></iframe>
+                            <ul class="list-inline">
+                                <li>Date: 2014</li>
+                                <li>Technologies: Javascript</li>
+                                <li>Platform: Browser</li>
+                                <li>Context: Hobby + Research Project</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="projectFractalFlames" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1154,7 +1206,7 @@
                             <h2>Cycles of War</h2>
                             <p class="item-intro text-muted">Know. Think. Decide. Act.</p>
                             <p>This game is all about planets. Players try to acquire them all in order to win. Their only way of interacting, though, is to send a fleet from a planet they own to any other planet in the universe. When any of the fleets arrives at its target, an automatic battle will be fought the winner of which will be in possession of the planet afterwards. This is very convenient, because planets automatically produce troops that can then be send off to new worlds again.</p>
-                            <p>This game / artificial intelligence battleground was developed, because my fingers are too thick and too slow to beat a pretty similar game on my phone. So instead of fighting my touch display to make the phone carry out my cleverly laid out strategies, I wanted to be able to just write down the strategy and see it succeeding in a Ender-Wiggin-Like punsh fest. So one long afternoon in the university I built the foundation for the project, followed by two more weeks of evenings in the flow, where the whole API was hardened and sparring bots were born. Since then the many brave students and collegues have thrown their champions into the arena to demonstrate their superity. Thanks to them we have a very fine selection of worthy opponents. Thanks to Markus, we furthermore have very beautiful optics now.</p>
+                            <p>This game / artificial intelligence battleground was developed, because my fingers are too thick and too slow to beat a pretty similar game on my phone. So instead of fighting my touch display to make the phone carry out my cleverly laid out strategies, I wanted to be able to just write down the strategy and see it succeeding in a Ender-Wiggin-Like battle. So one long afternoon in the university I built the foundation for the project, followed by two more weeks of evenings in the flow, where the whole API was hardened and sparring bots were born. Since then the many brave students and collegues have thrown their champions into the arena to demonstrate their superity. Thanks to them we have a very fine selection of worthy opponents. Thanks to Markus, we furthermore have very beautiful optics now.</p>
                             <p>This project is available on <a href="http://github.com/Feinbube/cyclesofwar">GitHub</a>.</p>
                             <h3>Impressions:</h3>
                             <img class="img-rounded img-responsive img-centered" src="img/projects/cow1.png" alt="">

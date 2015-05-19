@@ -1,0 +1,3 @@
+[submodule "projects/cowJS"]
+	path = projects/cowJS
+	url = https://github.com/Feinbube/cowJS.git
