@@ -36,7 +36,7 @@ $( function() {
     return false;
   };
 
-  $('#filters').on( 'click', '.btn', function() {
+  function runFilter() {
     setTimeout(function() {
       var filtersByCategory = getFilters().split('/');
 
@@ -62,26 +62,14 @@ $( function() {
         return true;
       
       } });
-
-      /*
-      var $this = $(this);
-      // get group key
-      var $buttonGroup = $this.parents('.btn-group');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $this.attr('data-filter');
-      // combine filters
-      var filterValue = '';
-      for ( var prop in filters ) {
-        filterValue += filters[ prop ];
-      }
-      // set filter for Isotope
-      $container.isotope({ filter: filterValue });
-
-      console.log(filterValue);
-      */
     }, 100);
+  };
+
+  $('#filters').on( 'click', '.btn', function() {
+    runFilter();
   });
+
+  runFilter();
 
     // change is-checked class on buttons
     /*$('.btn-group').each( function( i, buttonGroup ) {
