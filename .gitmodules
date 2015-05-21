@@ -4,3 +4,6 @@
 [submodule "projects/rorschach"]
 	path = projects/rorschach
 	url = https://github.com/Feinbube/rorschach-android.git
+[submodule "projects/numbers"]
+	path = projects/numbers
+	url = https://github.com/laena/number-app-android.git
